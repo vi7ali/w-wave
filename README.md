@@ -1,6 +1,6 @@
 # w-wave
-W-Wave landing page
-A landing page based on figma file design.
+W-Wave landing page:
+A landing page based on Figma file design.
 * Semantic tags
 * Codestyle: https://codeguide.maxgraph.ru/
 * BEM methology
