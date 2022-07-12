@@ -11,6 +11,6 @@ A landing page based on Figma file design.
 * Cross-browser compatibility
 * Min screen width: 320px
 * Safe breakpoints: https://drive.google.com/file/d/1u_cR7aHMtImH1EVeaXH5iwfKFaVL3C2i/view?usp=sharing
-* Optimized images size
+* Optimized images
 * A11y support, screenreader friendly
 * DRY principle
