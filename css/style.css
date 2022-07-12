@@ -1,0 +1,116 @@
+:root {
+  font-size: 62.5%;
+  --dark-black: #121723;
+  --light-black: #292E39;
+  --text-gray: #A1A6B4;
+  --shade-gray: #D2D5DD;
+  --light-color: #E6E8EC;
+  --promo-color: #F0D288;
+  --promo-color-shade: #BB973E;
+  --red: #D52B1E;
+  --primary: #6D31EE;
+  --primary-shade: #4F28A5;
+  --primary-light: #AA9DFA;   
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muller-Regular'),
+       url('../fonts/MullerRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MullerRegular.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Muller-Medium'),
+       url('../fonts/MullerMedium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MullerMedium.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller Regular Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muller-RegularItalic'),
+       url('../fonts/MullerRegularItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MullerRegularItalic.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Muller-Bold'),
+       url('../fonts/MullerBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MullerBold.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller Light Italic';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Muller-LightItalic'),
+       url('../fonts/MullerLightItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MullerLightItalic.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('OpenSans-Regular'),
+       url('../fonts/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/OpenSans-Regular.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+body {
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: #FFF;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  list-style: none;
+  font-size: 0;
+}
+
+.btn-reset {
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.section {
+  width: 100vw;
+}
+
+.section__inner {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
