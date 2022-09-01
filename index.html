@@ -10,15 +10,16 @@
   <link rel="stylesheet" href="css/media.css">
   <title>W-Wave</title>
 </head>
+
 <body>
   <header class="header flex">
-    <div class="header__container">
+    <div class="header__container header__container--top flex">
       <nav class="nav inner flex">
-        <a class="nav__item" aria-label="Логотип" href="#">
+        <a aria-label="Логотип" href="#">
           <img class="header__logo" src="img/logo.png" alt="Логотип">
         </a>
 
-        <ul class="nav__item links list-reset flex">
+        <ul class="links list-reset flex">
           <li class="links__item">
             <a class="links__link" href="#">Подкасты</a>
           </li>
@@ -36,25 +37,90 @@
           </li>
         </ul>
 
-        <div class="nav__item buttons">
-          <button class="btn-reset buttons__search">
+        <div class="buttons flex">
+          <button class="btn-reset">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
 
-          <button class="btn-reset buttons__login">
-            TEST
-          </button>
+          <button class="btn-reset buttons__login">Вход</button>
         </div>
 
       </nav>
     </div>
 
-    <nav class="header__container">
+    <div class="header__container header__container--bottom flex">
+      <nav class="nav nav--bottom inner flex">
+        <ul class="nav__item links links--bottom list-reset flex">
+          <li class="links__item">
+            <a class="links__link links__link--bottom" href="#">Новости</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link links__link--bottom" href="#">Блоги</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link links__link--bottom" href="#">Топы</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link links__link--bottom" href="#">Опросы</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link links__link--bottom" href="#">Рейтинги</a>
+          </li>
+          <li class="links__item">
+            <a class="links__link links__link--bottom" href="#">Реклама</a>
+          </li>
+        </ul>
 
-    </nav>
+        <div class="nav__item players flex">
+          <div class="player">
+            <div class="player__left">
+              <button class="btn-reset">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="player__right">
+              <h2 class="player__title">
+                Ранее в эфире
+              </h2>
+              <span class="player__subtitle">
+                «Музыка»
+              </span>
+            </div>
+          </div>
+
+          <div class="player">
+            <div class="player__left">
+              <button class="btn-reset">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="player__right">
+              <h2 class="player__title">
+                Сейчас в эфире
+              </h2>
+              <span class="player__subtitle">
+                «Как так?»
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="nav__item age">
+          <span class="age__text">12+</span>
+        </div>
+
+      </nav>
+    </div>
   </header>
 </body>
 </html>

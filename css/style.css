@@ -99,6 +99,8 @@ body {
 .btn-reset {
   padding: 0;
 
+  font-size: 0;
+
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -122,28 +124,127 @@ body {
 
 .header__container {
   width: 100vw;
-  padding: 20px 0;
-  border-bottom: 1px solid red;
+  box-shadow: inset 0 -1px 0 0 var(--light-color);
 }
 
-.nav__logo {
-  max-width: 160px;
+.header__container--top {
+  height: 80px;
 }
 
-.links {
-  justify-content: space-between;
-  flex-grow: 1;
-  max-width: 638px;
-
-  padding: 0;
-}
-
-.links__link {
-  text-decoration: none;
-  font-size: 1.6rem;
+.header__container--bottom {
+  height: 60px;
 }
 
 .nav {
+  flex-grow: 1;
   justify-content: space-between;
   align-items: center;
 }
+
+.header__logo {
+  vertical-align: bottom;
+}
+
+.links {
+  max-width: 638px;
+  padding: 0;
+
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.links__link {
+  font-size: 2rem;
+  line-height: 2rem;
+  text-decoration: none;
+
+  color: var(--dark-black);
+}
+
+.buttons {
+  max-width: 152px;
+
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons__login {
+  max-height: 40px;
+  max-width: 104px;
+  padding: 11px 32px;
+
+  border: 2px solid var(--dark-black);
+  border-radius: 77px;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.nav--bottom {
+  justify-content: flex-start;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 52px;
+}
+
+.links__link--bottom {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.links--bottom {
+  max-width: 611px;
+}
+
+.players {
+  flex-grow: 1;
+  max-width: 350px;
+}
+
+.player {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+
+  max-width: 174px;
+
+  border-left: 1px solid var(--light-color);
+}
+
+.player:last-child {
+  border-right: 1px solid var(--light-color);
+}
+
+.player__left {
+  font-size: 0;
+  margin-right: 10px;
+  padding-left: 12px;
+}
+
+.player__title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-weight: 400;
+
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+
+  color: var(--text-gray);
+}
+
+.player__subtitle {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+
+  color: var(--dark-black);
+}
+
+.age {
+
+
+}
+
